@@ -1,6 +1,7 @@
 ﻿bin/
 obj/
 .vs/
+Logs/
 
 appsettings*.json
 userDetails.json

@@ -1,63 +1,72 @@
+using CMSApi.Application;
+using CMSApi.Application.DTO;
+using CMSApi.Application.DTO.EmployeeDto;
+//using CMSApi.Application.DTO.AuthDto;
 using CMSApi.Application.Interfaces;
 using CMSApi.Application.Services;
+using CMSApi.Application.Services.Email;
+using CMSApi.AuthExtension;
+using CMSApi.Domain.Entities;
 using CMSApi.Infrastructure;
 using CMSApi.Infrastructure.Data;
+using CMSApi.Presentation.Controllers;
+using CMSApi.Presentation.Controllers.Auth;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.UI.Services;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
+using Serilog;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container
 builder.Services.AddControllers();
+builder.Services.AddSwagger()
+                .InjectDbContext(builder.Configuration)
+                .AddAppConfig(builder.Configuration)
+                .AddIdentityHandlers()
+                .ConfigureIdentityOptions()
+                .AddIdentityAuth(builder.Configuration);
 
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddTransient<IEmailService, EmailService>();
+//builder.Services.AddTransient<WelcomeEmailJob>();
 
-// builder.Services.AddOpenApi();
+Log.Logger = new LoggerConfiguration()
+    .MinimumLevel.Debug() // log everything from Debug and above
+    .WriteTo.Console()    // log to console
+    .WriteTo.File("Logs/log-.txt", rollingInterval: RollingInterval.Day) // log to daily file
+    .Enrich.FromLogContext() // add useful context like RequestId
+    .CreateLogger();
 
-//Add DbContext
-builder.Services.AddDbContext<CMSDbContext>(options => 
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Host.UseSerilog();
 
-builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
-// builder.Services.AddScoped<IAuthService, AuthService>();
-builder.Services.AddScoped<IEmployeeService, EmployeeService>();
+builder.Services.AddScoped<IDeptService, DeptService>()
+                .AddScoped<IEmployeeService, EmployeeService>()
+                .AddScoped<IPasswordHasher<Employee>, PasswordHasher<Employee>>()
+                //.AddScoped<IAuthService, AuthService>()
+                .AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>))
+                .AddAutoMapper(typeof(Program));
 
-builder.Services.AddAutoMapper(typeof(Program));
-
-
-builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-   .AddJwtBearer(options => 
-   {
-       options.TokenValidationParameters = new TokenValidationParameters
-       {
-           ValidateIssuer = true,
-           ValidIssuer = builder.Configuration["AppSettings:Issuer"],
-           ValidateAudience = true,
-           ValidAudience = builder.Configuration["AppSettings:Audience"],
-           ValidateLifetime = true,
-           IssuerSigningKey = new SymmetricSecurityKey(
-               Encoding.UTF8.GetBytes(builder.Configuration["AppSettings:Token"]!)),
-       };
-   });
-
-builder.Services.AddScoped<IAuthService, AuthService>();
-
-
+builder.Services.AddAutoMapper(typeof(MappingProfile));
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
-
-app.UseHttpsRedirection();
-
-app.UseAuthentication();
-app.UseAuthorization();
+app.ConfigureSwagger()
+   .ConfigureCORS(builder.Configuration)
+   .AddIdentityAuthMiddleware();
 
 app.MapControllers();
+app.MapGroup("/api");
+//.MapIdentityApi<AppUser>();
+//.WithTags("Auth");
+
+app.MapGroup("/api")
+   .MapIdentityUserEndpoints()
+   .MapAuthorizationDemoEndpoints()
+   .MapAccountEndpoints();
 
 app.Run();
