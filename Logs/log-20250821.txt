@@ -1,0 +1,477 @@
+2025-08-21 11:43:52.616 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-08-21 11:43:52.729 +01:00 [DBG] Hosting starting
+2025-08-21 11:43:52.775 +01:00 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-21 11:43:52.795 +01:00 [DBG] Reading data from file 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys\key-8647a598-9118-4347-ac0a-36d9777c35dd.xml'.
+2025-08-21 11:43:52.838 +01:00 [DBG] Found key {8647a598-9118-4347-ac0a-36d9777c35dd}.
+2025-08-21 11:43:52.858 +01:00 [DBG] Considering key {8647a598-9118-4347-ac0a-36d9777c35dd} with expiration date 2025-11-16 09:50:12Z as default key.
+2025-08-21 11:43:52.864 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-08-21 11:43:52.868 +01:00 [DBG] Decrypting secret element using Windows DPAPI.
+2025-08-21 11:43:52.870 +01:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-08-21 11:43:52.876 +01:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2025-08-21 11:43:52.878 +01:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2025-08-21 11:43:52.880 +01:00 [DBG] Using key {8647a598-9118-4347-ac0a-36d9777c35dd} as the default key.
+2025-08-21 11:43:52.881 +01:00 [DBG] Key ring with default key {8647a598-9118-4347-ac0a-36d9777c35dd} was loaded during application startup.
+2025-08-21 11:43:52.889 +01:00 [DBG] Middleware loaded
+2025-08-21 11:43:52.892 +01:00 [DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16497 B).
+2025-08-21 11:43:52.893 +01:00 [DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+2025-08-21 11:43:53.021 +01:00 [DBG] Middleware configuration started with options: {AllowedHosts = *, AllowEmptyHosts = True, IncludeFailureMessage = True}
+2025-08-21 11:43:53.025 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-08-21 11:43:53.039 +01:00 [DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+2025-08-21 11:43:53.149 +01:00 [INF] Now listening on: https://localhost:7258
+2025-08-21 11:43:53.155 +01:00 [INF] Now listening on: http://localhost:5191
+2025-08-21 11:43:53.161 +01:00 [DBG] Loaded hosting startup assembly CMSApi
+2025-08-21 11:43:53.165 +01:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2025-08-21 11:43:53.166 +01:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-08-21 11:43:53.168 +01:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-08-21 11:43:53.177 +01:00 [DBG] Executing API description provider 'EndpointMetadataApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2025-08-21 11:43:53.181 +01:00 [DBG] Executing API description provider 'DefaultApiDescriptionProvider' from assembly Microsoft.AspNetCore.Mvc.ApiExplorer v9.0.0.0.
+2025-08-21 11:43:53.251 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-21 11:43:53.252 +01:00 [INF] Hosting environment: Development
+2025-08-21 11:43:53.255 +01:00 [INF] Content root path: C:\Users\HP\Documents\repos\CMSApi\CMSApi
+2025-08-21 11:43:53.257 +01:00 [DBG] Hosting started
+2025-08-21 11:44:20.932 +01:00 [DBG] Connection id "0HNF0JUNRQQ07" accepted.
+2025-08-21 11:44:20.977 +01:00 [DBG] Connection id "0HNF0JUNRQQ07" started.
+2025-08-21 11:44:21.043 +01:00 [DBG] Connection 0HNF0JUNRQQ07 established using the following protocol: "Tls13"
+2025-08-21 11:44:21.114 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7258/swagger/index.html - null null
+2025-08-21 11:44:21.294 +01:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-08-21 11:44:21.296 +01:00 [DBG] Request did not match any endpoints
+2025-08-21 11:44:21.353 +01:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2025-08-21 11:44:21.357 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2025-08-21 11:44:21.364 +01:00 [DBG] Response markup was updated to include Browser Link script injection.
+2025-08-21 11:44:21.366 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2025-08-21 11:44:21.370 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7258/swagger/index.html - 200 null text/html;charset=utf-8 262.9851ms
+2025-08-21 11:44:21.374 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7258/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-21 11:44:21.378 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7258/_vs/browserLink - null null
+2025-08-21 11:44:21.424 +01:00 [DBG] Script injected: /_framework/aspnetcore-browser-refresh.js
+2025-08-21 11:44:21.430 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7258/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 55.9627ms
+2025-08-21 11:44:21.471 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7258/_vs/browserLink - 200 null text/javascript; charset=UTF-8 96.9368ms
+2025-08-21 11:44:21.501 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7258/swagger/v1/swagger.json - null null
+2025-08-21 11:44:21.505 +01:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-08-21 11:44:21.507 +01:00 [DBG] Request did not match any endpoints
+2025-08-21 11:44:21.526 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7258/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 24.465ms
+2025-08-21 11:44:23.832 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7258/swagger/index.html - null null
+2025-08-21 11:44:23.858 +01:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-08-21 11:44:23.864 +01:00 [DBG] Request did not match any endpoints
+2025-08-21 11:44:23.868 +01:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2025-08-21 11:44:23.871 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2025-08-21 11:44:23.875 +01:00 [DBG] Response markup was updated to include Browser Link script injection.
+2025-08-21 11:44:23.878 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2025-08-21 11:44:23.882 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7258/swagger/index.html - 200 null text/html;charset=utf-8 50.1261ms
+2025-08-21 11:44:23.931 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7258/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-21 11:44:23.931 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7258/_vs/browserLink - null null
+2025-08-21 11:44:23.959 +01:00 [DBG] Script injected: /_framework/aspnetcore-browser-refresh.js
+2025-08-21 11:44:23.982 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7258/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 51.2675ms
+2025-08-21 11:44:23.993 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7258/_vs/browserLink - 200 null text/javascript; charset=UTF-8 61.3821ms
+2025-08-21 11:44:24.089 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7258/swagger/v1/swagger.json - null null
+2025-08-21 11:44:24.102 +01:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-08-21 11:44:24.105 +01:00 [DBG] Request did not match any endpoints
+2025-08-21 11:44:24.144 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7258/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 54.5178ms
+2025-08-21 11:44:24.210 +01:00 [DBG] Connection id "0HNF0JUNRQQ07" received FIN.
+2025-08-21 11:44:24.221 +01:00 [DBG] The connection queue processing loop for 0HNF0JUNRQQ07 completed.
+2025-08-21 11:44:24.229 +01:00 [DBG] Connection id "0HNF0JUNRQQ07" is closed. The last processed stream ID was 15.
+2025-08-21 11:44:24.237 +01:00 [DBG] Connection id "0HNF0JUNRQQ07" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-08-21 11:44:24.259 +01:00 [DBG] Connection id "0HNF0JUNRQQ07" stopped.
+2025-08-21 11:44:28.739 +01:00 [DBG] Connection id "0HNF0JUNRQQ08" accepted.
+2025-08-21 11:44:28.741 +01:00 [DBG] Connection id "0HNF0JUNRQQ08" started.
+2025-08-21 11:44:28.747 +01:00 [DBG] Connection 0HNF0JUNRQQ08 established using the following protocol: "Tls13"
+2025-08-21 11:44:28.751 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7258/swagger/index.html - null null
+2025-08-21 11:44:28.758 +01:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-08-21 11:44:28.760 +01:00 [DBG] Request did not match any endpoints
+2025-08-21 11:44:28.761 +01:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2025-08-21 11:44:28.762 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2025-08-21 11:44:28.763 +01:00 [DBG] Response markup was updated to include Browser Link script injection.
+2025-08-21 11:44:28.764 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2025-08-21 11:44:28.765 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7258/swagger/index.html - 200 null text/html;charset=utf-8 14.1176ms
+2025-08-21 11:44:28.785 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7258/_vs/browserLink - null null
+2025-08-21 11:44:28.785 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7258/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-21 11:44:28.796 +01:00 [DBG] Script injected: /_framework/aspnetcore-browser-refresh.js
+2025-08-21 11:44:28.797 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7258/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 12.348ms
+2025-08-21 11:44:28.798 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7258/_vs/browserLink - 200 null text/javascript; charset=UTF-8 12.7052ms
+2025-08-21 11:44:28.841 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7258/swagger/v1/swagger.json - null null
+2025-08-21 11:44:28.854 +01:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-08-21 11:44:28.857 +01:00 [DBG] Request did not match any endpoints
+2025-08-21 11:44:28.866 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7258/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 24.4054ms
+2025-08-21 11:44:55.383 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7258/swagger/index.html - null null
+2025-08-21 11:44:55.398 +01:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-08-21 11:44:55.399 +01:00 [DBG] Request did not match any endpoints
+2025-08-21 11:44:55.400 +01:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2025-08-21 11:44:55.401 +01:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2025-08-21 11:44:55.402 +01:00 [DBG] Response markup was updated to include Browser Link script injection.
+2025-08-21 11:44:55.403 +01:00 [DBG] Response markup was updated to include browser refresh script injection.
+2025-08-21 11:44:55.405 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7258/swagger/index.html - 200 null text/html;charset=utf-8 21.5809ms
+2025-08-21 11:44:55.419 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7258/_vs/browserLink - null null
+2025-08-21 11:44:55.419 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7258/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-21 11:44:55.431 +01:00 [DBG] Script injected: /_framework/aspnetcore-browser-refresh.js
+2025-08-21 11:44:55.470 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7258/_framework/aspnetcore-browser-refresh.js - 200 16497 application/javascript; charset=utf-8 25.1189ms
+2025-08-21 11:44:55.476 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7258/_vs/browserLink - 200 null text/javascript; charset=UTF-8 57.3635ms
+2025-08-21 11:44:55.507 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7258/swagger/v1/swagger.json - null null
+2025-08-21 11:44:55.525 +01:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-08-21 11:44:55.526 +01:00 [DBG] Request did not match any endpoints
+2025-08-21 11:44:55.546 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7258/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 39.5413ms
+2025-08-21 11:48:27.140 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7258/api/Auth/register - application/json 231
+2025-08-21 11:48:27.157 +01:00 [DBG] 1 candidate(s) found for the request path '/api/Auth/register'
+2025-08-21 11:48:27.160 +01:00 [DBG] Endpoint 'CMSApi.Presentation.Controllers.AuthController.Register (CMSApi)' with route pattern 'api/Auth/register' is valid for the request path '/api/Auth/register'
+2025-08-21 11:48:27.163 +01:00 [DBG] Request matched endpoint 'CMSApi.Presentation.Controllers.AuthController.Register (CMSApi)'
+2025-08-21 11:48:27.259 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-08-21 11:48:27.263 +01:00 [INF] Executing endpoint 'CMSApi.Presentation.Controllers.AuthController.Register (CMSApi)'
+2025-08-21 11:48:27.286 +01:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CMSApi.Application.DTO.AuthDto.LoginResponseDto]] Register(CMSApi.Application.DTO.AuthDto.RegisterDto) on controller CMSApi.Presentation.Controllers.AuthController (CMSApi).
+2025-08-21 11:48:27.292 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-08-21 11:48:27.295 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-08-21 11:48:27.296 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-08-21 11:48:27.298 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-08-21 11:48:27.300 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-08-21 11:48:27.303 +01:00 [DBG] Executing controller factory for controller CMSApi.Presentation.Controllers.AuthController (CMSApi)
+2025-08-21 11:48:27.472 +01:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-08-21 11:48:27.572 +01:00 [DBG] Executed controller factory for controller CMSApi.Presentation.Controllers.AuthController (CMSApi)
+2025-08-21 11:48:27.588 +01:00 [DBG] Attempting to bind parameter 'dto' of type 'CMSApi.Application.DTO.AuthDto.RegisterDto' ...
+2025-08-21 11:48:27.593 +01:00 [DBG] Attempting to bind parameter 'dto' of type 'CMSApi.Application.DTO.AuthDto.RegisterDto' using the name '' in request data ...
+2025-08-21 11:48:27.596 +01:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-08-21 11:48:27.609 +01:00 [DBG] Connection id "0HNF0JUNRQQ08", Request id "0HNF0JUNRQQ08:00000011": started reading request body.
+2025-08-21 11:48:27.612 +01:00 [DBG] Connection id "0HNF0JUNRQQ08", Request id "0HNF0JUNRQQ08:00000011": done reading request body.
+2025-08-21 11:48:27.622 +01:00 [DBG] JSON input formatter succeeded, deserializing to type 'CMSApi.Application.DTO.AuthDto.RegisterDto'
+2025-08-21 11:48:27.625 +01:00 [DBG] Done attempting to bind parameter 'dto' of type 'CMSApi.Application.DTO.AuthDto.RegisterDto'.
+2025-08-21 11:48:27.627 +01:00 [DBG] Done attempting to bind parameter 'dto' of type 'CMSApi.Application.DTO.AuthDto.RegisterDto'.
+2025-08-21 11:48:27.629 +01:00 [DBG] Attempting to validate the bound parameter 'dto' of type 'CMSApi.Application.DTO.AuthDto.RegisterDto' ...
+2025-08-21 11:48:27.637 +01:00 [DBG] Done attempting to validate the bound parameter 'dto' of type 'CMSApi.Application.DTO.AuthDto.RegisterDto'.
+2025-08-21 11:48:28.150 +01:00 [DBG] Entity Framework Core 9.0.8 initialized 'CMSDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.7' with options: EngineType=SqlServer 
+2025-08-21 11:48:28.229 +01:00 [DBG] Compiling query expression: 
+'DbSet<Employee>()
+    .Any(e => e.Email == __email_0)'
+2025-08-21 11:48:28.455 +01:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleAsync<bool>(
+    asyncEnumerable: SingleQueryingEnumerable.Create<bool>(
+        relationalQueryContext: (RelationalQueryContext)queryContext, 
+        relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT EXISTS (
+                SELECT 1
+                FROM Employees AS e
+                WHERE e.Email == @__email_0)) | Resolver: c => new RelationalCommandCache(
+            c.Dependencies.MemoryCache, 
+            c.RelationalDependencies.QuerySqlGeneratorFactory, 
+            c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT EXISTS (
+                SELECT 1
+                FROM Employees AS e
+                WHERE e.Email == @__email_0), 
+            False, 
+            new HashSet<string>(
+                new string[]{ }, 
+                StringComparer.Ordinal
+            )
+        )].GetRelationalCommandTemplate(parameters), 
+        readerColumns: null, 
+        shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+        {
+            bool? value1;
+            value1 = dataReader.IsDBNull(0) ? default(bool?) : (bool?)dataReader.GetBoolean(0);
+            return (bool)value1;
+        }, 
+        contextType: CMSApi.Infrastructure.Data.CMSDbContext, 
+        standAloneStateManager: False, 
+        detailedErrorsEnabled: False, 
+        threadSafetyChecksEnabled: True), 
+    cancellationToken: queryContext.CancellationToken)'
+2025-08-21 11:48:28.501 +01:00 [DBG] Creating DbConnection.
+2025-08-21 11:48:28.530 +01:00 [DBG] Created DbConnection. (26ms).
+2025-08-21 11:48:28.535 +01:00 [DBG] Opening connection to database 'CMSDb' on server 'localhost\SQLEXPRESS'.
+2025-08-21 11:48:28.898 +01:00 [DBG] Opened connection to database 'CMSDb' on server 'localhost\SQLEXPRESS'.
+2025-08-21 11:48:28.905 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-08-21 11:48:28.911 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (6ms).
+2025-08-21 11:48:28.922 +01:00 [DBG] Initialized DbCommand for 'ExecuteReader' (17ms).
+2025-08-21 11:48:28.931 +01:00 [DBG] Executing DbCommand [Parameters=[@__email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Employees] AS [e]
+        WHERE [e].[Email] = @__email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-08-21 11:48:29.024 +01:00 [INF] Executed DbCommand (94ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Employees] AS [e]
+        WHERE [e].[Email] = @__email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-08-21 11:48:29.045 +01:00 [DBG] Closing data reader to 'CMSDb' on server 'localhost\SQLEXPRESS'.
+2025-08-21 11:48:29.055 +01:00 [DBG] A data reader for 'CMSDb' on server 'localhost\SQLEXPRESS' is being disposed after spending 20ms reading results.
+2025-08-21 11:48:29.060 +01:00 [DBG] Closing connection to database 'CMSDb' on server 'localhost\SQLEXPRESS'.
+2025-08-21 11:48:29.067 +01:00 [DBG] Closed connection to database 'CMSDb' on server 'localhost\SQLEXPRESS' (6ms).
+2025-08-21 11:48:29.234 +01:00 [DBG] 'CMSDbContext' generated a temporary value for the property 'Employee.Id'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-21 11:48:29.295 +01:00 [DBG] Context 'CMSDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-21 11:48:29.301 +01:00 [DBG] SaveChanges starting for 'CMSDbContext'.
+2025-08-21 11:48:29.307 +01:00 [DBG] DetectChanges starting for 'CMSDbContext'.
+2025-08-21 11:48:29.328 +01:00 [DBG] DetectChanges completed for 'CMSDbContext'.
+2025-08-21 11:48:29.388 +01:00 [DBG] Opening connection to database 'CMSDb' on server 'localhost\SQLEXPRESS'.
+2025-08-21 11:48:29.393 +01:00 [DBG] Opened connection to database 'CMSDb' on server 'localhost\SQLEXPRESS'.
+2025-08-21 11:48:29.398 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-08-21 11:48:29.400 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2025-08-21 11:48:29.403 +01:00 [DBG] Initialized DbCommand for 'ExecuteReader' (4ms).
+2025-08-21 11:48:29.406 +01:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (DbType = Date), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = Boolean), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (DbType = DateTime2), @p11='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Employees] ([DOB], [Email], [Firstname], [Gender], [IsActive], [Lastname], [Middlename], [PasswordHash], [Phone], [RefreshToken], [RefreshTokenExpiryTime], [Role])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11);
+2025-08-21 11:48:29.422 +01:00 [INF] Executed DbCommand (17ms) [Parameters=[@p0='?' (DbType = Date), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = Boolean), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (DbType = DateTime2), @p11='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Employees] ([DOB], [Email], [Firstname], [Gender], [IsActive], [Lastname], [Middlename], [PasswordHash], [Phone], [RefreshToken], [RefreshTokenExpiryTime], [Role])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11);
+2025-08-21 11:48:29.435 +01:00 [DBG] The foreign key property 'Employee.Id' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2025-08-21 11:48:29.443 +01:00 [DBG] Closing data reader to 'CMSDb' on server 'localhost\SQLEXPRESS'.
+2025-08-21 11:48:29.446 +01:00 [DBG] A data reader for 'CMSDb' on server 'localhost\SQLEXPRESS' is being disposed after spending 20ms reading results.
+2025-08-21 11:48:29.449 +01:00 [DBG] Closing connection to database 'CMSDb' on server 'localhost\SQLEXPRESS'.
+2025-08-21 11:48:29.450 +01:00 [DBG] Closed connection to database 'CMSDb' on server 'localhost\SQLEXPRESS' (1ms).
+2025-08-21 11:48:29.463 +01:00 [DBG] An entity of type 'Employee' tracked by 'CMSDbContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-21 11:48:29.468 +01:00 [DBG] SaveChanges completed for 'CMSDbContext' with 1 entities written to the database.
+2025-08-21 11:48:29.476 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-08-21 11:48:29.481 +01:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2025-08-21 11:48:29.483 +01:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2025-08-21 11:48:29.485 +01:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-08-21 11:48:29.487 +01:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-08-21 11:48:29.490 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-08-21 11:48:29.491 +01:00 [INF] Executing OkObjectResult, writing value of type 'CMSApi.Application.DTO.AuthDto.LoginResponseDto'.
+2025-08-21 11:48:29.506 +01:00 [INF] Executed action CMSApi.Presentation.Controllers.AuthController.Register (CMSApi) in 2199.4588ms
+2025-08-21 11:48:29.509 +01:00 [INF] Executed endpoint 'CMSApi.Presentation.Controllers.AuthController.Register (CMSApi)'
+2025-08-21 11:48:29.513 +01:00 [DBG] 'CMSDbContext' disposed.
+2025-08-21 11:48:29.519 +01:00 [DBG] Disposing connection to database 'CMSDb' on server 'localhost\SQLEXPRESS'.
+2025-08-21 11:48:29.522 +01:00 [DBG] Disposed connection to database '' on server '' (4ms).
+2025-08-21 11:48:29.525 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7258/api/Auth/register - 200 null application/json; charset=utf-8 2385.0583ms
+2025-08-21 11:48:44.230 +01:00 [DBG] Connection id "0HNF0JUNRQQ08" received FIN.
+2025-08-21 11:48:44.233 +01:00 [DBG] Connection id "0HNF0JUNRQQ08" is closed. The last processed stream ID was 17.
+2025-08-21 11:48:44.233 +01:00 [DBG] The connection queue processing loop for 0HNF0JUNRQQ08 completed.
+2025-08-21 11:48:44.235 +01:00 [DBG] Connection id "0HNF0JUNRQQ08" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-08-21 11:48:44.245 +01:00 [DBG] Connection id "0HNF0JUNRQQ08" stopped.
+2025-08-21 11:49:59.561 +01:00 [DBG] Connection id "0HNF0JUNRQQ09" accepted.
+2025-08-21 11:49:59.639 +01:00 [DBG] Connection id "0HNF0JUNRQQ09" started.
+2025-08-21 11:49:59.652 +01:00 [DBG] Connection 0HNF0JUNRQQ09 established using the following protocol: "Tls13"
+2025-08-21 11:49:59.687 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7258/api/Auth/login - application/json 61
+2025-08-21 11:49:59.699 +01:00 [DBG] 1 candidate(s) found for the request path '/api/Auth/login'
+2025-08-21 11:49:59.702 +01:00 [DBG] Endpoint 'CMSApi.Presentation.Controllers.AuthController.Login (CMSApi)' with route pattern 'api/Auth/login' is valid for the request path '/api/Auth/login'
+2025-08-21 11:49:59.705 +01:00 [DBG] Request matched endpoint 'CMSApi.Presentation.Controllers.AuthController.Login (CMSApi)'
+2025-08-21 11:49:59.709 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-08-21 11:49:59.711 +01:00 [INF] Executing endpoint 'CMSApi.Presentation.Controllers.AuthController.Login (CMSApi)'
+2025-08-21 11:49:59.725 +01:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(CMSApi.Application.DTO.AuthDto.LoginRequestDto) on controller CMSApi.Presentation.Controllers.AuthController (CMSApi).
+2025-08-21 11:49:59.730 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-08-21 11:49:59.734 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-08-21 11:49:59.737 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-08-21 11:49:59.744 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-08-21 11:49:59.750 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-08-21 11:49:59.754 +01:00 [DBG] Executing controller factory for controller CMSApi.Presentation.Controllers.AuthController (CMSApi)
+2025-08-21 11:49:59.760 +01:00 [DBG] Executed controller factory for controller CMSApi.Presentation.Controllers.AuthController (CMSApi)
+2025-08-21 11:49:59.765 +01:00 [DBG] Attempting to bind parameter 'loginRequest' of type 'CMSApi.Application.DTO.AuthDto.LoginRequestDto' ...
+2025-08-21 11:49:59.769 +01:00 [DBG] Attempting to bind parameter 'loginRequest' of type 'CMSApi.Application.DTO.AuthDto.LoginRequestDto' using the name '' in request data ...
+2025-08-21 11:49:59.774 +01:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-08-21 11:49:59.782 +01:00 [DBG] Connection id "0HNF0JUNRQQ09", Request id "0HNF0JUNRQQ09:00000001": started reading request body.
+2025-08-21 11:49:59.787 +01:00 [DBG] Connection id "0HNF0JUNRQQ09", Request id "0HNF0JUNRQQ09:00000001": done reading request body.
+2025-08-21 11:49:59.796 +01:00 [DBG] JSON input formatter succeeded, deserializing to type 'CMSApi.Application.DTO.AuthDto.LoginRequestDto'
+2025-08-21 11:49:59.800 +01:00 [DBG] Done attempting to bind parameter 'loginRequest' of type 'CMSApi.Application.DTO.AuthDto.LoginRequestDto'.
+2025-08-21 11:49:59.806 +01:00 [DBG] Done attempting to bind parameter 'loginRequest' of type 'CMSApi.Application.DTO.AuthDto.LoginRequestDto'.
+2025-08-21 11:49:59.813 +01:00 [DBG] Attempting to validate the bound parameter 'loginRequest' of type 'CMSApi.Application.DTO.AuthDto.LoginRequestDto' ...
+2025-08-21 11:49:59.823 +01:00 [DBG] Done attempting to validate the bound parameter 'loginRequest' of type 'CMSApi.Application.DTO.AuthDto.LoginRequestDto'.
+2025-08-21 11:49:59.879 +01:00 [DBG] Entity Framework Core 9.0.8 initialized 'CMSDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.7' with options: EngineType=SqlServer 
+2025-08-21 11:49:59.889 +01:00 [DBG] Compiling query expression: 
+'DbSet<Employee>()
+    .FirstOrDefault(e => e.Email == __email_0)'
+2025-08-21 11:50:00.144 +01:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<Employee>(
+    asyncEnumerable: SingleQueryingEnumerable.Create<Employee>(
+        relationalQueryContext: (RelationalQueryContext)queryContext, 
+        relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Employee.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Employee.DOB (DateOnly) Required, 1], [Property: Employee.Email (string) Required, 2], [Property: Employee.Firstname (string) Required, 3], [Property: Employee.Gender (string) Required, 4], [Property: Employee.IsActive (bool) Required, 5], [Property: Employee.Lastname (string) Required, 6], [Property: Employee.Middlename (string), 7], [Property: Employee.PasswordHash (string) Required, 8], [Property: Employee.Phone (string) Required, 9], [Property: Employee.RefreshToken (string), 10], [Property: Employee.RefreshTokenExpiryTime (DateTime) Required, 11], [Property: Employee.Role (string) Required, 12] }
+            SELECT TOP(1) e.Id, e.DOB, e.Email, e.Firstname, e.Gender, e.IsActive, e.Lastname, e.Middlename, e.PasswordHash, e.Phone, e.RefreshToken, e.RefreshTokenExpiryTime, e.Role
+            FROM Employees AS e
+            WHERE e.Email == @__email_0) | Resolver: c => new RelationalCommandCache(
+            c.Dependencies.MemoryCache, 
+            c.RelationalDependencies.QuerySqlGeneratorFactory, 
+            c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Employee.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Employee.DOB (DateOnly) Required, 1], [Property: Employee.Email (string) Required, 2], [Property: Employee.Firstname (string) Required, 3], [Property: Employee.Gender (string) Required, 4], [Property: Employee.IsActive (bool) Required, 5], [Property: Employee.Lastname (string) Required, 6], [Property: Employee.Middlename (string), 7], [Property: Employee.PasswordHash (string) Required, 8], [Property: Employee.Phone (string) Required, 9], [Property: Employee.RefreshToken (string), 10], [Property: Employee.RefreshTokenExpiryTime (DateTime) Required, 11], [Property: Employee.Role (string) Required, 12] }
+            SELECT TOP(1) e.Id, e.DOB, e.Email, e.Firstname, e.Gender, e.IsActive, e.Lastname, e.Middlename, e.PasswordHash, e.Phone, e.RefreshToken, e.RefreshTokenExpiryTime, e.Role
+            FROM Employees AS e
+            WHERE e.Email == @__email_0, 
+            False, 
+            new HashSet<string>(
+                new string[]{ }, 
+                StringComparer.Ordinal
+            )
+        )].GetRelationalCommandTemplate(parameters), 
+        readerColumns: null, 
+        shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+        {
+            Employee entity;
+            entity = 
+            {
+                MaterializationContext materializationContext1;
+                IEntityType entityType1;
+                Employee instance1;
+                InternalEntityEntry entry1;
+                bool hasNullKey1;
+                materializationContext1 = new MaterializationContext(
+                    [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                    queryContext.Context
+                );
+                instance1 = default(Employee);
+                entry1 = queryContext.TryGetEntry(
+                    key: [LIFTABLE Constant: Key: Employee.Id PK | Resolver: c => c.Dependencies.Model.FindEntityType("CMSApi.Domain.Entities.Employee").FindPrimaryKey()], 
+                    keyValues: new object[]{ (object)dataReader.GetInt32(0) }, 
+                    throwOnNullKey: True, 
+                    hasNullKey: hasNullKey1);
+                !(hasNullKey1) ? entry1 != default(InternalEntityEntry) ? 
+                {
+                    entityType1 = entry1.EntityType;
+                    return instance1 = (Employee)entry1.Entity;
+                } : 
+                {
+                    ISnapshot shadowSnapshot1;
+                    shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                    entityType1 = [LIFTABLE Constant: EntityType: Employee | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("CMSApi.Domain.Entities.Employee")];
+                    instance1 = switch (entityType1)
+                    {
+                        case [LIFTABLE Constant: EntityType: Employee | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("CMSApi.Domain.Entities.Employee")]: 
+                            {
+                                return 
+                                {
+                                    Employee instance;
+                                    instance = new Employee();
+                                    instance.<Id>k__BackingField = dataReader.GetInt32(0);
+                                    instance.<DOB>k__BackingField = dataReader.GetFieldValue<DateOnly>(1);
+                                    instance.<Email>k__BackingField = dataReader.GetString(2);
+                                    instance.<Firstname>k__BackingField = dataReader.GetString(3);
+                                    instance.<Gender>k__BackingField = dataReader.GetString(4);
+                                    instance.<IsActive>k__BackingField = dataReader.GetBoolean(5);
+                                    instance.<Lastname>k__BackingField = dataReader.GetString(6);
+                                    instance.<Middlename>k__BackingField = dataReader.IsDBNull(7) ? default(string) : dataReader.GetString(7);
+                                    instance.<PasswordHash>k__BackingField = dataReader.GetString(8);
+                                    instance.<Phone>k__BackingField = dataReader.GetString(9);
+                                    instance.<RefreshToken>k__BackingField = dataReader.IsDBNull(10) ? default(string) : dataReader.GetString(10);
+                                    instance.<RefreshTokenExpiryTime>k__BackingField = dataReader.GetDateTime(11);
+                                    instance.<Role>k__BackingField = dataReader.GetString(12);
+                                    (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                        context: materializationContext1.Context, 
+                                        entity: instance, 
+                                        queryTrackingBehavior: TrackAll, 
+                                        structuralType: [LIFTABLE Constant: EntityType: Employee | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("CMSApi.Domain.Entities.Employee")]) : default(void);
+                                    return instance;
+                                }}
+                        default: 
+                            default(Employee)
+                    }
+                    ;
+                    entry1 = entityType1 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                        entityType: entityType1, 
+                        entity: instance1, 
+                        snapshot: shadowSnapshot1);
+                    return instance1;
+                } : default(void);
+                return instance1;
+            };
+            return entity;
+        }, 
+        contextType: CMSApi.Infrastructure.Data.CMSDbContext, 
+        standAloneStateManager: False, 
+        detailedErrorsEnabled: False, 
+        threadSafetyChecksEnabled: True), 
+    cancellationToken: queryContext.CancellationToken)'
+2025-08-21 11:50:00.166 +01:00 [DBG] Creating DbConnection.
+2025-08-21 11:50:00.170 +01:00 [DBG] Created DbConnection. (3ms).
+2025-08-21 11:50:00.174 +01:00 [DBG] Opening connection to database 'CMSDb' on server 'localhost\SQLEXPRESS'.
+2025-08-21 11:50:00.181 +01:00 [DBG] Opened connection to database 'CMSDb' on server 'localhost\SQLEXPRESS'.
+2025-08-21 11:50:00.186 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-08-21 11:50:00.189 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (3ms).
+2025-08-21 11:50:00.193 +01:00 [DBG] Initialized DbCommand for 'ExecuteReader' (6ms).
+2025-08-21 11:50:00.197 +01:00 [DBG] Executing DbCommand [Parameters=[@__email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[DOB], [e].[Email], [e].[Firstname], [e].[Gender], [e].[IsActive], [e].[Lastname], [e].[Middlename], [e].[PasswordHash], [e].[Phone], [e].[RefreshToken], [e].[RefreshTokenExpiryTime], [e].[Role]
+FROM [Employees] AS [e]
+WHERE [e].[Email] = @__email_0
+2025-08-21 11:50:00.214 +01:00 [INF] Executed DbCommand (17ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[DOB], [e].[Email], [e].[Firstname], [e].[Gender], [e].[IsActive], [e].[Lastname], [e].[Middlename], [e].[PasswordHash], [e].[Phone], [e].[RefreshToken], [e].[RefreshTokenExpiryTime], [e].[Role]
+FROM [Employees] AS [e]
+WHERE [e].[Email] = @__email_0
+2025-08-21 11:50:00.246 +01:00 [DBG] Context 'CMSDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-21 11:50:00.254 +01:00 [DBG] Closing data reader to 'CMSDb' on server 'localhost\SQLEXPRESS'.
+2025-08-21 11:50:00.260 +01:00 [DBG] A data reader for 'CMSDb' on server 'localhost\SQLEXPRESS' is being disposed after spending 39ms reading results.
+2025-08-21 11:50:00.266 +01:00 [DBG] Closing connection to database 'CMSDb' on server 'localhost\SQLEXPRESS'.
+2025-08-21 11:50:00.270 +01:00 [DBG] Closed connection to database 'CMSDb' on server 'localhost\SQLEXPRESS' (4ms).
+2025-08-21 11:50:00.501 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-08-21 11:50:00.508 +01:00 [DBG] No information found on request to perform content negotiation.
+2025-08-21 11:50:00.511 +01:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-08-21 11:50:00.513 +01:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-08-21 11:50:00.515 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-08-21 11:50:00.520 +01:00 [INF] Executing OkObjectResult, writing value of type 'CMSApi.Application.DTO.AuthDto.LoginResponseDto'.
+2025-08-21 11:50:00.525 +01:00 [INF] Executed action CMSApi.Presentation.Controllers.AuthController.Login (CMSApi) in 770.6502ms
+2025-08-21 11:50:00.529 +01:00 [INF] Executed endpoint 'CMSApi.Presentation.Controllers.AuthController.Login (CMSApi)'
+2025-08-21 11:50:00.533 +01:00 [DBG] 'CMSDbContext' disposed.
+2025-08-21 11:50:00.537 +01:00 [DBG] Disposing connection to database 'CMSDb' on server 'localhost\SQLEXPRESS'.
+2025-08-21 11:50:00.543 +01:00 [DBG] Disposed connection to database '' on server '' (6ms).
+2025-08-21 11:50:00.549 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7258/api/Auth/login - 200 null application/json; charset=utf-8 867.1861ms
+2025-08-21 11:50:41.685 +01:00 [INF] Request starting HTTP/2 POST https://localhost:7258/api/Auth/login - application/json 56
+2025-08-21 11:50:41.697 +01:00 [DBG] 1 candidate(s) found for the request path '/api/Auth/login'
+2025-08-21 11:50:41.698 +01:00 [DBG] Endpoint 'CMSApi.Presentation.Controllers.AuthController.Login (CMSApi)' with route pattern 'api/Auth/login' is valid for the request path '/api/Auth/login'
+2025-08-21 11:50:41.700 +01:00 [DBG] Request matched endpoint 'CMSApi.Presentation.Controllers.AuthController.Login (CMSApi)'
+2025-08-21 11:50:41.703 +01:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-08-21 11:50:41.705 +01:00 [INF] Executing endpoint 'CMSApi.Presentation.Controllers.AuthController.Login (CMSApi)'
+2025-08-21 11:50:41.706 +01:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(CMSApi.Application.DTO.AuthDto.LoginRequestDto) on controller CMSApi.Presentation.Controllers.AuthController (CMSApi).
+2025-08-21 11:50:41.708 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-08-21 11:50:41.710 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-08-21 11:50:41.711 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-08-21 11:50:41.713 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-08-21 11:50:41.715 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-08-21 11:50:41.716 +01:00 [DBG] Executing controller factory for controller CMSApi.Presentation.Controllers.AuthController (CMSApi)
+2025-08-21 11:50:41.721 +01:00 [DBG] Executed controller factory for controller CMSApi.Presentation.Controllers.AuthController (CMSApi)
+2025-08-21 11:50:41.723 +01:00 [DBG] Attempting to bind parameter 'loginRequest' of type 'CMSApi.Application.DTO.AuthDto.LoginRequestDto' ...
+2025-08-21 11:50:41.725 +01:00 [DBG] Attempting to bind parameter 'loginRequest' of type 'CMSApi.Application.DTO.AuthDto.LoginRequestDto' using the name '' in request data ...
+2025-08-21 11:50:41.727 +01:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-08-21 11:50:41.728 +01:00 [DBG] Connection id "0HNF0JUNRQQ09", Request id "0HNF0JUNRQQ09:00000003": started reading request body.
+2025-08-21 11:50:41.729 +01:00 [DBG] Connection id "0HNF0JUNRQQ09", Request id "0HNF0JUNRQQ09:00000003": done reading request body.
+2025-08-21 11:50:41.730 +01:00 [DBG] JSON input formatter succeeded, deserializing to type 'CMSApi.Application.DTO.AuthDto.LoginRequestDto'
+2025-08-21 11:50:41.731 +01:00 [DBG] Done attempting to bind parameter 'loginRequest' of type 'CMSApi.Application.DTO.AuthDto.LoginRequestDto'.
+2025-08-21 11:50:41.732 +01:00 [DBG] Done attempting to bind parameter 'loginRequest' of type 'CMSApi.Application.DTO.AuthDto.LoginRequestDto'.
+2025-08-21 11:50:41.733 +01:00 [DBG] Attempting to validate the bound parameter 'loginRequest' of type 'CMSApi.Application.DTO.AuthDto.LoginRequestDto' ...
+2025-08-21 11:50:41.735 +01:00 [DBG] Done attempting to validate the bound parameter 'loginRequest' of type 'CMSApi.Application.DTO.AuthDto.LoginRequestDto'.
+2025-08-21 11:50:41.787 +01:00 [DBG] Entity Framework Core 9.0.8 initialized 'CMSDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:9.0.7' with options: EngineType=SqlServer 
+2025-08-21 11:50:41.799 +01:00 [DBG] Creating DbConnection.
+2025-08-21 11:50:41.801 +01:00 [DBG] Created DbConnection. (1ms).
+2025-08-21 11:50:41.803 +01:00 [DBG] Opening connection to database 'CMSDb' on server 'localhost\SQLEXPRESS'.
+2025-08-21 11:50:41.805 +01:00 [DBG] Opened connection to database 'CMSDb' on server 'localhost\SQLEXPRESS'.
+2025-08-21 11:50:41.806 +01:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-08-21 11:50:41.808 +01:00 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2025-08-21 11:50:41.809 +01:00 [DBG] Initialized DbCommand for 'ExecuteReader' (2ms).
+2025-08-21 11:50:41.811 +01:00 [DBG] Executing DbCommand [Parameters=[@__email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[DOB], [e].[Email], [e].[Firstname], [e].[Gender], [e].[IsActive], [e].[Lastname], [e].[Middlename], [e].[PasswordHash], [e].[Phone], [e].[RefreshToken], [e].[RefreshTokenExpiryTime], [e].[Role]
+FROM [Employees] AS [e]
+WHERE [e].[Email] = @__email_0
+2025-08-21 11:50:41.815 +01:00 [INF] Executed DbCommand (4ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[DOB], [e].[Email], [e].[Firstname], [e].[Gender], [e].[IsActive], [e].[Lastname], [e].[Middlename], [e].[PasswordHash], [e].[Phone], [e].[RefreshToken], [e].[RefreshTokenExpiryTime], [e].[Role]
+FROM [Employees] AS [e]
+WHERE [e].[Email] = @__email_0
+2025-08-21 11:50:41.817 +01:00 [DBG] Context 'CMSDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2025-08-21 11:50:41.818 +01:00 [DBG] Closing data reader to 'CMSDb' on server 'localhost\SQLEXPRESS'.
+2025-08-21 11:50:41.820 +01:00 [DBG] A data reader for 'CMSDb' on server 'localhost\SQLEXPRESS' is being disposed after spending 2ms reading results.
+2025-08-21 11:50:41.821 +01:00 [DBG] Closing connection to database 'CMSDb' on server 'localhost\SQLEXPRESS'.
+2025-08-21 11:50:41.822 +01:00 [DBG] Closed connection to database 'CMSDb' on server 'localhost\SQLEXPRESS' (1ms).
+2025-08-21 11:50:41.898 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-08-21 11:50:41.902 +01:00 [DBG] No information found on request to perform content negotiation.
+2025-08-21 11:50:41.903 +01:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-08-21 11:50:41.904 +01:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-08-21 11:50:41.905 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-08-21 11:50:41.906 +01:00 [INF] Executing OkObjectResult, writing value of type 'CMSApi.Application.DTO.AuthDto.LoginResponseDto'.
+2025-08-21 11:50:41.908 +01:00 [INF] Executed action CMSApi.Presentation.Controllers.AuthController.Login (CMSApi) in 191.9463ms
+2025-08-21 11:50:41.910 +01:00 [INF] Executed endpoint 'CMSApi.Presentation.Controllers.AuthController.Login (CMSApi)'
+2025-08-21 11:50:41.911 +01:00 [DBG] 'CMSDbContext' disposed.
+2025-08-21 11:50:41.913 +01:00 [DBG] Disposing connection to database 'CMSDb' on server 'localhost\SQLEXPRESS'.
+2025-08-21 11:50:41.914 +01:00 [DBG] Disposed connection to database '' on server '' (1ms).
+2025-08-21 11:50:41.916 +01:00 [INF] Request finished HTTP/2 POST https://localhost:7258/api/Auth/login - 200 null application/json; charset=utf-8 230.8341ms
+2025-08-21 12:05:49.827 +01:00 [DBG] Connection id "0HNF0JUNRQQ09" received FIN.
+2025-08-21 12:05:49.849 +01:00 [DBG] Connection id "0HNF0JUNRQQ09" is closed. The last processed stream ID was 3.
+2025-08-21 12:05:49.850 +01:00 [DBG] The connection queue processing loop for 0HNF0JUNRQQ09 completed.
+2025-08-21 12:05:49.861 +01:00 [DBG] Connection id "0HNF0JUNRQQ09" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-08-21 12:05:49.874 +01:00 [DBG] Connection id "0HNF0JUNRQQ09" stopped.
