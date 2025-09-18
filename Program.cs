@@ -1,6 +1,4 @@
 using CMSApi.Application;
-using CMSApi.Application.DTO;
-using CMSApi.Application.DTO.EmployeeDto;
 //using CMSApi.Application.DTO.AuthDto;
 using CMSApi.Application.Interfaces;
 using CMSApi.Application.Services;
@@ -8,19 +6,10 @@ using CMSApi.Application.Services.Email;
 using CMSApi.AuthExtension;
 using CMSApi.Domain.Entities;
 using CMSApi.Infrastructure;
-using CMSApi.Infrastructure.Data;
 using CMSApi.Presentation.Controllers;
 using CMSApi.Presentation.Controllers.Auth;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.UI.Services;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.IdentityModel.Tokens;
 using Serilog;
-using System.IdentityModel.Tokens.Jwt;
-using System.Security.Claims;
-using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
